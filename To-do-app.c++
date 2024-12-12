@@ -64,6 +64,34 @@ void removetask(vector<string>&tasks){
 }
 
 int main(){
+    vector<string> tasks;
+    int choice;
+
+    do{
+        displayMenu();
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            addTask(tasks);
+            break;
+        case 2:
+            viewTasks(tasks);
+            break;
+        case 3:
+            removetask(tasks);
+            break;
+        case 4:
+            cout << "Exiting the programm ... \n";
+            break;
+           
+        default:
+            cout << "Invalid Choice plese try 1 to 4 as your choice \n";
+            break;
+        }
+        
+    }while (choice ! = 4);
 
     return 0;
 }
