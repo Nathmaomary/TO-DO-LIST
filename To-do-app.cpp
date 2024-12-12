@@ -12,7 +12,7 @@ void displayMenu(){
     cout << "2. view Tasks \n";
     cout << "3. Delete a Task \n";
     cout << "4. Exit \n";
-    cout << " Enter your Choice from 1 - 4 : "
+    cout << " Enter your Choice from 1 - 4 : ";
 }
 
 //Function to add Tasks
@@ -91,7 +91,7 @@ int main(){
             break;
         }
         
-    }while (choice ! = 4);
+    }while (choice != 4);
 
     return 0;
 }
