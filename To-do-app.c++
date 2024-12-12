@@ -39,3 +39,31 @@ void viewTasks(vector<string>&tasks){
         }
         }
 }
+
+//Function to remove Task
+
+void removetask(vector<string>&tasks){
+    if(tasks.empty()){
+        cout << "No task if available to remoce \n";
+        return;
+    }
+
+    int taskindex;
+    cout << "Enter number of task you want to remove : ";
+    cin >> taskindex;
+
+    //To check task Index
+
+    if (taskindex >= 1 && taskindex <= tasks.size()){
+        tasks.erase(tasks.begin() + taskindex - 1); //Removing Task
+        
+    }else{
+        cout << "Invalid task Number. \n";
+    }
+
+}
+
+int main(){
+
+    return 0;
+}
